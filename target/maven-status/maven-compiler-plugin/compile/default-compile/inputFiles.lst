@@ -1,0 +1,12 @@
+C:\eclipse-workspace\salarios-app\src\main\java\salario\model\Pessoa.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\controller\PessoaSalarioConsolidadoBean.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\service\SalarioService.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\model\Vencimento.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\util\Transacional.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\model\CargoVencimento.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\model\Cargo.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\model\PessoaSalarioConsolidado.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\repository\SchemaGeneration.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\util\EntityManagerProducer.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\util\TransacionalInterceptor.java
+C:\eclipse-workspace\salarios-app\src\main\java\salario\model\TipoVencimento.java

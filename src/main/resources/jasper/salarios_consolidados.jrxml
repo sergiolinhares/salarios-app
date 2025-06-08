@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="salarios_consolidados"
+              pageWidth="595"
+              pageHeight="842"
+              columnWidth="555"
+              leftMargin="20"
+              rightMargin="20"
+              topMargin="20"
+              bottomMargin="20">
+    
+    <field name="pessoaId" class="java.lang.Long"/>
+    <field name="nomePessoa" class="java.lang.String"/>
+    <field name="nomeCargo" class="java.lang.String"/>
+    <field name="salario" class="java.math.BigDecimal"/>
+    
+    <title>
+        <band height="50">
+            <staticText>
+                <reportElement x="0" y="0" width="555" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="18" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Relatório de Salários Consolidados]]></text>
+            </staticText>
+        </band>
+    </title>
+    
+    <columnHeader>
+        <band height="30">
+            <staticText>
+                <reportElement x="0" y="0" width="50" height="30"/>
+                <text><![CDATA[ID]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="50" y="0" width="200" height="30"/>
+                <text><![CDATA[Nome]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="250" y="0" width="150" height="30"/>
+                <text><![CDATA[Cargo]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="400" y="0" width="155" height="30"/>
+                <text><![CDATA[Salário (R$)]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    
+    <detail>
+        <band height="30">
+            <textField>
+                <reportElement x="0" y="0" width="50" height="30"/>
+                <textFieldExpression><![CDATA[$F{pessoaId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="50" y="0" width="200" height="30"/>
+                <textFieldExpression><![CDATA[$F{nomePessoa}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="250" y="0" width="150" height="30"/>
+                <textFieldExpression><![CDATA[$F{nomeCargo}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="400" y="0" width="155" height="30"/>
+                <textFieldExpression><![CDATA["R$ " + new java.text.DecimalFormat("#,##0.00").format($F{salario})]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>

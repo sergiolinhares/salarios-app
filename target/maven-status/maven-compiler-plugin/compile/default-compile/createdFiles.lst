@@ -1,0 +1,12 @@
+salario\model\PessoaSalarioConsolidado.class
+salario\util\EntityManagerProducer.class
+salario\controller\PessoaSalarioConsolidadoBean.class
+salario\model\Cargo.class
+salario\util\TransacionalInterceptor.class
+salario\model\TipoVencimento.class
+salario\model\Pessoa.class
+salario\util\Transacional.class
+salario\model\Vencimento.class
+salario\service\SalarioService.class
+salario\model\CargoVencimento.class
+salario\repository\SchemaGeneration.class
