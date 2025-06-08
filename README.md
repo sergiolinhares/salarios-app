@@ -1,7 +1,7 @@
 
 # Salários Consolidado APP
 
-> **Stack:** Java 8 · JSF 2.3 + PrimeFaces 12 · JPA/Hibernate 5 · CDI/Weld · Tomcat 8.5 · PostgreSQL 15 · Maven 3 · JasperReports 6.20
+> **Stack:** Java 8 · JSF 2.3 · JPA/Hibernate 5 · CDI/Weld · Tomcat 8.5 · PostgreSQL 15 · Maven 3 · JasperReports 6.20
 
 ## 1. Visão Geral
 
@@ -9,7 +9,6 @@ Aplicação web que consolida salários de pessoas de forma performática e ass�
 Principais funcionalidades:
 
 * Cálculo paralelo dos salários, evitando _N + 1_ em consultas JPA  
-* Exibição em data‐table paginada e badge de totalizador  
 * Exportação do resultado para PDF via JasperReports  
 * Arquitetura limpa: **model → service → controller (Bean) → view (JSF)**
 
@@ -17,13 +16,13 @@ Principais funcionalidades:
 
 ```bash
 # 1. clonar o repositório
-git clone <> salarios-app
+git clone git@github.com:sergiolinhares/salarios-app.git
 
 # 2. criar banco
-executar o comando docker compose up -d na raiz do projeto
+executar o comando na raiz do projeto: docker compose up -d 
 
 # 3. configurar servidor
-criar um servidor tomcat v8.5 e adicionar o modulo salarios-app para dentro dele
+criar um servidor tomcat v8.5 e adicionar o modulo salarios-app nele
 
 # 4. iniciar o servidor e acessar
 http://localhost:8080/salarios-app/SalarioConsolidado.xhtml
